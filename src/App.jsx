@@ -17,6 +17,7 @@ function App() {
         ))}
       </div>
       <div className='language-description-container'>
+        <h2 className='description-title'>{languages[selectedIndex].title}</h2>
         <p className='description'>{languages[selectedIndex].description}</p>
       </div>
     </>

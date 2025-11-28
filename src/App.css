@@ -1,6 +1,12 @@
 .language-description-container {
   border: 1px solid black;
   border-radius: 5px;
+  padding: 10px;
+}
+
+.description-title {
+  font-weight: 500;
+  margin-top: 0;
 }
 
 .selected {
@@ -14,18 +20,14 @@
 }
 
 .btn {
-    border: 0;
-    border-radius: 20px;
-    padding: 10px 20px;
-    margin-right: 10px;
+  border: 0;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-right: 10px;
 }
 
 .btn-container {
   margin-bottom: 20px;
-}
-
-.description {
-  padding: 20px;
 }
 
 .title {
