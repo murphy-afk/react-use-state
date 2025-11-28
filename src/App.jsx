@@ -3,7 +3,7 @@ import './App.css'
 import { languages } from "./assets/languages"
 
 function App() {
-  const [selectedIndex, setIndex] = useState(0);
+  const [selectedIndex, setIndex] = useState(null);
   return (
     <>
       <h1 className='title'>Learn web development</h1>
@@ -17,8 +17,8 @@ function App() {
         ))}
       </div>
       <div className='language-description-container'>
-        <h2 className='description-title'>{languages[selectedIndex].title}</h2>
-        <p className='description'>{languages[selectedIndex].description}</p>
+        <h2 className='description-title'>{selectedIndex != null ? languages[selectedIndex].title : ""}</h2>
+        <p className='description'>{selectedIndex != null ? languages[selectedIndex].description : "nessun linguaggio selezionato"}</p>
       </div>
     </>
   )
