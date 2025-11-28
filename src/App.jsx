@@ -6,18 +6,18 @@ function App() {
   const [selectedIndex, setIndex] = useState(0);
   return (
     <>
-      <h1>Learn web development</h1>
-      <div>
+      <h1 className='title'>Learn web development</h1>
+      <div className='btn-container'>
         {languages.map((language, index) => (
           <button
             key={language.id}
             onClick={() => setIndex(index)}
-            className={index === selectedIndex ? "selected" : "not-selected"}>
+            className={`${index === selectedIndex ? "selected" : "not-selected"} btn`}>
             {language.title}</button>
         ))}
-        <div className='language-description-container'>
-          <p>{languages[selectedIndex].description}</p>
-        </div>
+      </div>
+      <div className='language-description-container'>
+        <p className='description'>{languages[selectedIndex].description}</p>
       </div>
     </>
   )
